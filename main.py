@@ -87,23 +87,18 @@ class TradeSimulator:
         decimals = tokenContract.functions.decimals().call()
         DECIMAL = 10 ** decimals
         Token_balance = tokenContract.functions.balanceOf(sender_address).call()
-        # token_balance = balance / 10 ** decimals
         if Token_balance < 1:
             print("\nTrying to buy... ", tokenSymbol)
             spend = self.web3.to_checksum_address("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2")
             nonce = self.web3.eth.get_transaction_count(sender_address)
             start = time.time()  # start of the tx
 
-            # swapExactETHForTokensSupportingFeeOnTransferTokens
-            # swapExactETHForTokens
             uniswap_tx = self.uniswap_contract.functions.swapExactETHForTokensSupportingFeeOnTransferTokens(
                 0, [spend, token_to_buy], sender_address, (int(time.time()) + 10000)
             ).build_transaction(
                 {
                     "from": sender_address,
                     "value": self.web3.to_wei(amt, "ether"),
-                    # "gas": 300000,
-                    # "gasPrice": self.web3.eth.gas_price,
                     'maxFeePerGas': self.web3.to_wei(100, "gwei"),
                     'maxPriorityFeePerGas': self.web3.to_wei(20, "gwei"),
                     "nonce": nonce,
