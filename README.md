@@ -1,12 +1,14 @@
 # Uniswap-Copy-Trading-Bot
-Copy any wallet trading Uniswap pools via any decentralized exchange on the Ethereum network.
-
-https://etherscan.io/token/0x4e32b7fee444217f6aaf57e30684e8cf5db4d7ea?a=0x84c8ea2224cdf28b0c02ef1b2f2618de082030fe
-
-
-<img width="918" alt="image" src="https://github.com/user-attachments/assets/6f9d2f4a-dafc-4a01-ba3b-e4c9174ec3be">
-
+Copy any wallet trading Uniswap pools via any decentralized exchange on the Ethereum network. Current bot settings are set to pay above gasprice to give ability to front run if transactions of the target wallet are not appended to the network via a private node in this case you will only be able to buy after.
 
 
 ## ⚠️ Crypto Trading Warning
 Crypto trading can easily turn into uncontrollable gambling—stay cautious! If you're trading, make sure to track your P&L regularly. Stay on top of your performance with the [DexPNL Bot](https://t.me/dexpnl_bot). 
+
+
+## 💰 Support My Work
+If these scripts have helped you, please consider supporting my work. Your support will help me continue to develop these tools and create more useful resources for the crypto community.
+
+- 🤑 Fiat Donations: [Paypal Link](https://paypal.me/HenryTirla)
+
+- 🚀 henrytirla.sol:   FJRDY392XSyfV9nFZC8SZij1hB3hsH121pCQi1KrvH6b
