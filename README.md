@@ -11,4 +11,6 @@ If these scripts have helped you, please consider supporting my work. Your suppo
 
 - 🤑 Fiat Donations: [Paypal Link](https://paypal.me/HenryTirla)
 
-- 🚀 henrytirla.sol:   FJRDY392XSyfV9nFZC8SZij1hB3hsH121pCQi1KrvH6b
+- 🚀  henrytirla.sol:   FJRDY392XSyfV9nFZC8SZij1hB3hsH121pCQi1KrvH6b
+
+- 🚀 henrytirla.eth:   0x84c8ea2224cDF28b0c02EF1b2F2618dE082030fe
