@@ -3,7 +3,7 @@ Copy any wallet trading Uniswap pools via any decentralized exchange on the Ethe
 
 
 ## ⚠️ Crypto Trading Warning
-Crypto trading can easily turn into uncontrollable gambling—stay cautious! If you're trading, make sure to track your P&L regularly. Stay on top of your performance with the [DexPNL Bot](https://t.me/dexpnl_bot). 
+Crypto trading can easily turn into uncontrollable gambling—stay cautious! If you're trading, make sure to track your P&L regularly. Stay on top of your performance with the [DexPNL Bot](https://github.com/henrytirla/DEX-PNL-BOT). 
 
 
 ## 💰 Support My Work
