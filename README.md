@@ -13,4 +13,5 @@ If these scripts have helped you, please consider supporting my work. Your suppo
 
 - 🚀  henrytirla.sol:   FJRDY392XSyfV9nFZC8SZij1hB3hsH121pCQi1KrvH6b
 
-- 🚀 henrytirla.eth:   0x84c8ea2224cDF28b0c02EF1b2F2618dE082030fe
+- 💰 Eth:  0x4CB272D37531cBC636Befd05B0E63f0E57D6cd69
+- 💰 BSC/Polygon: 0x4CB272D37531cBC636Befd05B0E63f0E57D6cd69
