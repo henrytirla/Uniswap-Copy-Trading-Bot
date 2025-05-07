@@ -92,6 +92,8 @@ class TradeSimulator:
             spend = self.web3.to_checksum_address("0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2")
             nonce = self.web3.eth.get_transaction_count(sender_address)
             start = time.time()  # start of the tx
+            gasPrice = self.web3.eth.gas_price + (2 * 10 ** 9)
+
 
             uniswap_tx = self.uniswap_contract.functions.swapExactETHForTokensSupportingFeeOnTransferTokens(
                 0, [spend, token_to_buy], sender_address, (int(time.time()) + 10000)
@@ -99,8 +101,10 @@ class TradeSimulator:
                 {
                     "from": sender_address,
                     "value": self.web3.to_wei(amt, "ether"),
-                    'maxFeePerGas': self.web3.to_wei(100, "gwei"),
-                    'maxPriorityFeePerGas': self.web3.to_wei(20, "gwei"),
+                    "gas":300000,
+                    "gasPrice": gasPrice,
+                    # 'maxFeePerGas': self.web3.to_wei(100, "gwei"),
+                    # 'maxPriorityFeePerGas': self.web3.to_wei(20, "gwei"),
                     "nonce": nonce,
                 }
             )
@@ -154,7 +158,8 @@ class TradeSimulator:
 
             print(f"Swapping {token_balance} {tokenSymbol} for ETH")
 
-            gas_price = self.web3.eth.gas_price
+            gas_price = self.web3.eth.gas_price + (2 * 10 ** 9)
+
 
             pancakeswap2_txn = contractbuy.functions.swapExactTokensForETHSupportingFeeOnTransferTokens(
                 int(balance), 0,
